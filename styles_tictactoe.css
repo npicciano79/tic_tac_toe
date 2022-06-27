@@ -1,3 +1,8 @@
+/*selects all elements*/
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
 :root{
     font-size:16px;
     font-family: 'Ubuntu Condensed',sans-serif;
@@ -5,9 +10,10 @@
     --font-color-second:white;
     --text-color-header:#8caded; 
     --bg-color-header:#394459;
-    
+   
 }
 body{
+    margin:0;
     width:100vw;
     height:100vh;
     display: grid;
@@ -58,10 +64,10 @@ header{
     height:90%;
     margin:auto;
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3,auto);
     grid-template-rows: repeat(3,1fr);
-    grid-gap:2px;
 }
+/*gridcell formatting*/
 .gridcell{
     border:3px solid var(--bg-color-header);
     width:100%;
@@ -70,10 +76,12 @@ header{
     justify-content:center;
     align-items: center;
     cursor: pointer;
-    font-size: 90px;
-    
+    font-size: 90px;    
 }
-.gridcell:hover{
+.disabled{
+    cursor:not-allowed;
+}
+.gridcell:not(.disabled):hover{
     background-color:var(--text-color-header);
 }
 
@@ -86,10 +94,29 @@ header{
 .gridcell:nth-child(3n+3){
     border-right:none;
 }
+
 .gridcell:nth-last-of-type(-n+4){
     border-bottom:none;
-    border-top:none;
+    
 }
+.gridcell:nth-child(3n+2){
+    border-right:none; 
+}
+.gridcell:nth-child(n+4){
+    border-bottom:none;
+}
+
+/*
+.gridcell.x::before,
+.gridcell.x::after{
+    content:'';
+    width:calc(var(--mark-size)*.15);
+    height:var(--mark-size);
+    background-color: black;
+}
+*/
+
+
 /*linestrike at game winner*/
 .strike{
     position:absolute;
@@ -103,8 +130,6 @@ header{
 
 
 }
-
-
 
 
 /*footer styles*/
@@ -138,4 +163,17 @@ footer{
 .resetBtn:hover{
     background-color: white;
 
+}
+
+/*winning message*/
+.winning-message{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.9);
 }
