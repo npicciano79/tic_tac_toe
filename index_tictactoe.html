@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/tictactoe/styles_tictactoe.css">
-    <script src="javasript_tictactoe.js" defer></script>
+    <script src="script.js" defer></script>
     <title>Tic-Tac-Toe</title>
 </head>
 <body>
@@ -18,43 +18,23 @@
             <h2 class="gameStatus"></h2>
         </div>
        
-        <div class="main-game">
-                <div class="gridcell" id="0" data-index="0" data-cell></div>
-                <div class="gridcell" id="1" data-index="1" data-cell></div>
-                <div class="gridcell" id="2" data-index="2" data-cell></div>
-                <div class="gridcell" id="3" data-index="3" data-cell></div>
-                <div class="gridcell" id="4" data-index="4" data-cell></div>
-                <div class="gridcell" id="5" data-index="5" data-cell></div>
-                <div class="gridcell" id="6" data-index="6" data-cell></div>
-                <div class="gridcell" id="7" data-index="7" data-cell></div>
-                <div class="gridcell" id="8" data-index="8" data-cell></div>
-                <!--
-                <div class="'winning-message" id ="winning-message">
-                <div data-winning-message-text>asdasdasd</div>
-                <button id="restartButton">Restart</button>
-        </div>
+        <div class="board" id="board">
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+                <div class="cell" data-cell></div>
+       </div>         
+                <div class="winning-message" id ="winning-message">
+                    <div data-winning-message-text>X Wins</div>
+                    <button id="restartButton">Restart</button>
+                </div>
 
-                -->
-        
-         </div>
-        <!--score and reset-->
-        <footer class="foot_container">
-            <div class="score">
-                <span class="user_score">User Score: </span>
-                <span class="comp_score">Computer Score: </span>
-            </div>
-            <div class="reset">
-                <button class="resetBtn">Reset</button>
-            </div>
-        </footer>
-        
-
-        
-
-
-
-
-    </main>
+    
    
 </body>
 </html>
