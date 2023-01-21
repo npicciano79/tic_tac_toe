@@ -9,4 +9,9 @@
  Tic tac toe application written in Javascript, HTML and CSS
  
  <h2> application output</h2>
+ <img src='https://github.com/npicciano79/tic_tac_toe/blob/main/images/tttscreencap1.JPG?raw=true'
  
+ 
+ 
+ <h2>game play</h2>
+ To play the game select the link <a href='https://npicciano79.github.io/tic_tac_toe/'>tic tac toe game</a>
