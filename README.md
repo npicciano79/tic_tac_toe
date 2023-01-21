@@ -9,8 +9,14 @@
  Tic tac toe application written in Javascript, HTML and CSS
  
  <h2> application output</h2>
- <img src='https://github.com/npicciano79/tic_tac_toe/blob/main/images/tttscreencap1.JPG?raw=true'
- 
+ <img src='https://github.com/npicciano79/tic_tac_toe/blob/main/images/tttscreencap1.JPG?raw=true'>
+ <br>
+ <img src="https://github.com/npicciano79/tic_tac_toe/blob/main/images/tttscreencap2.JPG?raw=true">
+ <br>
+ <img src="https://github.com/npicciano79/tic_tac_toe/blob/main/images/tttscreencap3.JPG?raw=true">
+ <br>
+ <img src="https://github.com/npicciano79/tic_tac_toe/blob/main/images/tttscreencap4.JPG?raw=true">
+ <br>
  
  
  <h2>game play</h2>
